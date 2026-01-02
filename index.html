@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trading Viewer Pro</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/toolbar.css">
+  <link rel="stylesheet" href="css/chart.css">
+</head>
+<body>
+
+<header class="toolbar">
+  <div class="timeframes">
+    <button data-tf="1m">1M</button>
+    <button data-tf="5m">5M</button>
+    <button data-tf="1h">1H</button>
+    <button data-tf="1d">1D</button>
+    <button data-tf="1w">1W</button>
+  </div>
+
+  <div class="tools">
+    <button id="draw-trend">Trendline</button>
+    <button id="draw-fibo">Fibonacci</button>
+    <button id="draw-support">Soporte</button>
+  </div>
+</header>
+
+<main id="chart-container"></main>
+
+<script src="libs/lightweight-charts.standalone.production.js"></script>
+<script type="module" src="js/core/app.js"></script>
+</body>
+</html>

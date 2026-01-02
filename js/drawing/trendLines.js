@@ -1,0 +1,1 @@
+// Implementación canvas overlay (base)

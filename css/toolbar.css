@@ -1,0 +1,16 @@
+.toolbar {
+  height: 60px;
+  background: var(--panel);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+button {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: 6px 10px;
+  cursor: pointer;
+}

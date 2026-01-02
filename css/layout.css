@@ -1,0 +1,10 @@
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+#chart-container {
+  height: calc(100vh - 60px);
+}
