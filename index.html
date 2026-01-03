@@ -21,14 +21,121 @@
     <button data-tf="1w">1W</button>
   </div>
 
+  <div class="market-selector">
+  <select id="marketSelect">
+    
+  </select>
+
+  <select id="symbolSelect">
+    <!-- Se llena dinámicamente -->
+  </select>
+</div>
+
+
   <div class="tools">
     <button id="draw-trend">Trendline</button>
     <button id="draw-fibo">Fibonacci</button>
     <button id="draw-support">Soporte</button>
   </div>
+  <div class="donate">
+  <button id="donateBtn">Donar</button>
+</div>
+
 </header>
 
 <main id="chart-container"></main>
+<footer class="app-footer">
+  <p>
+    Desarrollado por <strong>Studios Bless</strong> © 2025 — Todos los derechos reservados.
+  </p>
+</footer>
+
+<div class="modal hidden" id="betaModal">
+  <div class="modal-content">
+    <h2>Proyecto en fase Beta</h2>
+
+    <p>
+      Trading Viewer Pro se encuentra actualmente en <strong>fase beta</strong>.
+    </p>
+
+    <p>
+      Esto significa que el proyecto está en constante desarrollo y puede
+      sufrir modificaciones en:
+    </p>
+
+    <ul>
+      <li>Diseño UI / UX</li>
+      <li>Herramientas disponibles</li>
+      <li>Rendimiento y comportamiento</li>
+    </ul>
+
+    <p>
+      La información mostrada en los gráficos es obtenida mediante
+      <strong>APIs de TradingView y proveedores de mercado</strong>.
+      No garantizamos exactitud absoluta ni continuidad del servicio.
+    </p>
+
+    <button id="closeBeta">Entendido</button>
+  </div>
+</div>
+
+
+<div class="modal hidden" id="donateModal">
+  <div class="modal-content">
+    <h2>Apoyá el proyecto</h2>
+
+    <p>
+      Trading Viewer Pro es una herramienta <strong>gratuita</strong> desarrollada de forma
+      independiente para estudiantes y análisis de mercado.
+    </p>
+
+    <p>
+      Las donaciones nos permiten mejorar el rendimiento, agregar nuevas herramientas,
+      mantener servidores y dedicar más tiempo al desarrollo.
+    </p>
+
+    <p><strong>Alias Mercado Pago: </strong>
+    <strong>axnsoft.corp</strong></p>
+    <p><strong>Nombre: </strong>
+    <strong>Rodrigo Nicolas Mercado</strong></p>
+    
+
+    <button id="closeDonate">Cerrar</button>
+  </div>
+</div>
+<div class="modal" id="welcomeModal">
+  <div class="modal-content">
+    <h2>Bienvenido a Trading Viewer Pro</h2>
+
+    <p>
+      Gracias por utilizar esta aplicación.
+    </p>
+
+    <p>
+      ⚠️ <strong>Aclaración legal:</strong><br>
+      Esta plataforma <strong>NO brinda asesoramiento financiero</strong>,
+      <strong>NO recomienda inversiones</strong> y
+      <strong>NO incentiva a operar con dinero real</strong>.
+    </p>
+
+    <p>
+      Trading Viewer Pro es únicamente una <strong>herramienta de análisis técnico</strong>
+      destinada a:
+    </p>
+
+    <ul>
+      <li>Estudiantes</li>
+      <li>Práctica de lectura de gráficos</li>
+      <li>Estudio de mercados</li>
+    </ul>
+
+    <p>
+      El uso de esta aplicación es bajo su propia responsabilidad.
+    </p>
+
+    <button id="acceptWelcome">Entendido</button>
+  </div>
+</div>
 
 <script src="libs/lightweight-charts.standalone.production.js"></script>
 <script type="module" src="js/core/app.js"></script>

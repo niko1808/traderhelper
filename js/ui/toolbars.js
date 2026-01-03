@@ -3,9 +3,7 @@ import { candleSeries } from '../chart/chartsInit.js';
 
 const symbol = 'BTCUSDT';
 
-document
-  .querySelectorAll('.timeframes button[data-tf]')
-  .forEach(btn => {
+document.querySelectorAll('[data-tf]').forEach(btn => {
     btn.addEventListener('click', () => {
       const tf = btn.dataset.tf;
 

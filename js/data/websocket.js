@@ -13,7 +13,7 @@ export function connectWS(symbol, interval, series) {
     const k = data.k;
 
     series.update({
-      time: Math.floor(k.t / 1000),
+      time: k.t / 1000,
       open: +k.o,
       high: +k.h,
       low: +k.l,

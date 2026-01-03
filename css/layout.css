@@ -8,3 +8,49 @@ body {
 #chart-container {
   height: calc(100vh - 60px);
 }
+
+.donate button {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #111;
+  color: #eee;
+  padding: 20px;
+  max-width: 420px;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 8px 12px;
+}
+
+
+.app-footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  color: #888;
+  background: #0b0b0b;
+  border-top: 1px solid #222;
+}
